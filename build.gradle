@@ -1,0 +1,32 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext.kotlin_plug_version = '1.5.21'
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.0.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_plug_version"
+        classpath "org.jetbrains.kotlin:kotlin-annotation-processing-gradle:$kotlin_plug_version"
+    }
+
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    ktx_core_version = '1.6.0'
+    appcompat_version = '1.3.1'
+    lifecycle_ktx_version = '2.3.0'
+    navigation_ktx_version = '2.3.5'
+    material_version = '1.4.0'
+    constraintlayout_version = '2.1.1'
+    room_version = '2.4.0-alpha03'
+    okhttp_version = '3.12.12'
+    glide_version = '4.11.0'
+    retrofit_version = '2.9.0'
+    sqlite_version = '2.1.0'
+}
