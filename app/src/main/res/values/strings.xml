@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Search greenday</string>
+    <string name="author">Kangdasol</string>
+    <string name="title_search_result">Search</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="network_connection_fail">please check\nnetwork connection</string>
+    <string name="ok">OK</string>
+</resources>

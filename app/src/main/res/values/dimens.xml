@@ -1,0 +1,28 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="track_row_item_height">100dp</dimen>
+    <dimen name="track_row_item_padding">15dp</dimen>
+    <dimen name="track_row_item_vertical_spacing">15dp</dimen>
+    <dimen name="track_poster_width">60dp</dimen>
+    <dimen name="track_poster_height">60dp</dimen>
+    <dimen name="track_info_width">250dp</dimen>
+    <dimen name="track_layout_margin_left">10dp</dimen>
+    <dimen name="track_layout_margin_right">10dp</dimen>
+
+    <dimen name="track_layout_fav_icon_width">30dp</dimen>
+    <dimen name="track_layout_fav_icon_height">30dp</dimen>
+
+    <dimen name="track_layout_trash_icon_width">30dp</dimen>
+    <dimen name="track_layout_trash_icon_height">30dp</dimen>
+
+    <dimen name="network_connection_check_width">200dp</dimen>
+    <dimen name="network_connection_check_height">150dp</dimen>
+    <dimen name="network_connection_check_button_width">30dp</dimen>
+    <dimen name="network_connection_check_button_height">30dp</dimen>
+    <dimen name="network_connection_check_icon_width">50dp</dimen>
+    <dimen name="network_connection_check_icon_height">50dp</dimen>
+    <dimen name="network_connection_check_icon_text_size">30dp</dimen>
+</resources>

@@ -1,0 +1,61 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+}
+
+android {
+    compileSdk 30
+    configurations { implementation.exclude group: 'com.intellij', module: 'annotations' }
+
+    defaultConfig {
+        applicationId "com.ds.kang.searchtest"
+        minSdk 19
+        targetSdk 29
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    kapt {
+        generateStubs = true
+        correctErrorTypes = true
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_plug_version"
+    implementation "androidx.core:core-ktx:$ktx_core_version"
+    implementation "androidx.appcompat:appcompat:$appcompat_version"
+    implementation "com.google.android.material:material:$material_version"
+    implementation "androidx.constraintlayout:constraintlayout:$constraintlayout_version"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_ktx_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_ktx_version"
+    implementation "androidx.navigation:navigation-fragment-ktx:$navigation_ktx_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$navigation_ktx_version"
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+
+
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+    implementation "androidx.room:room-ktx:$room_version"
+
+
+    implementation("com.github.bumptech.glide:glide:$glide_version") {
+        exclude group: "com.android.support"
+    }
+
+    implementation project(path: ':search')
+}
